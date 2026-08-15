@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-/* Deterministic pseudo-random so server/client render match */
 function mulberry32(seed: number) {
   return function () {
     seed |= 0;

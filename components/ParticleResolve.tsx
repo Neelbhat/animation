@@ -2,12 +2,6 @@
 
 import React, { useEffect, useRef } from "react";
 
-/**
- * ParticleResolve
- * A field of particles begins as scattered noise and resolves into a
- * hexagonal molecular lattice as the hero loads — then holds a slow,
- * living drift. Visual thesis for "Where structure becomes certainty."
- */
 export default function ParticleResolve({
   className = "",
   accent = "#3EBD8F",

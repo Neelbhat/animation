@@ -17,7 +17,7 @@ import Molecule3D from "./Molecule3D";
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* ---------- Reveal: scroll-triggered fade/slide-up, supports staggered children ---------- */
+// Reveal
 function Reveal({
   children,
   className = "",
@@ -62,7 +62,7 @@ function Reveal({
   );
 }
 
-/* ---------- Counter: animates a numeric value up when scrolled into view ---------- */
+// Counter
 function Counter({ value, className = "" }: { value: string; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const numeric = parseFloat(value.replace(/[^0-9.]/g, ""));
@@ -94,7 +94,7 @@ function Counter({ value, className = "" }: { value: string; className?: string 
   );
 }
 
-/* ---------- Lattice: draws itself in via GSAP; optional pin-scrubbed rotation ---------- */
+// Lattice
 function Lattice({
   size = 400,
   stroke = "#3EBD8F",

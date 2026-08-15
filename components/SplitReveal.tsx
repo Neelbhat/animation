@@ -6,11 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-/**
- * Splits `text` into words, each wrapped in an overflow-hidden mask so the
- * word itself can rise up from below the mask line — reads as ink resolving
- * into focus rather than a generic fade-up.
- */
+// * Splits `text` into words,
 export default function SplitReveal({
   text,
   className = "",

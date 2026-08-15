@@ -11,11 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 type Atom = { pos: [number, number, number]; kind: "core" | "hetero" | "terminal" };
 type Bond = { a: number; b: number; order?: 1 | 2 };
 
-/*
- * A stylized, illustrative small-molecule scaffold — not a real
- * compound. Hexagonal core with branching substituents, built for
- * visual weight rather than chemical accuracy.
- */
 const ATOMS: Atom[] = [
   { pos: [0, 0.9, 0], kind: "core" },
   { pos: [0.78, 0.45, 0.3], kind: "core" },
@@ -157,9 +152,6 @@ export default function Molecule3D({
       controls.autoRotate = false;
     });
 
-    // Scroll-scrubbed spin: rotates the molecule itself (independent of the
-    // camera orbit controls above) as the section moves through view, so
-    // scrolling past it feels like turning the model in your hand.
     let scrollTween: gsap.core.Tween | null = null;
     if (!reduceMotion) {
       scrollTween = gsap.to(group.rotation, {

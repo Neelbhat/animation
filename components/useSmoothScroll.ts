@@ -8,10 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
- * Drives scroll through Lenis (for the inertial/weighted feel) while keeping
- * GSAP's ScrollTrigger perfectly in sync — without this, ScrollTrigger reads
- * the native scroll position and everything pinned/scrubbed will jitter.
- */
+ * Drives scroll through Lenis (for the inertial/weighted feel) while keeping*/
 export function useSmoothScroll() {
   useEffect(() => {
     const lenis = new Lenis({
